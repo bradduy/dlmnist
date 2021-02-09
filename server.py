@@ -1,4 +1,3 @@
-# import flask import Flask, request, jsonify
 from torch_utils import transformImage, getPrediction
 from fastapi import FastAPI, File, UploadFile
 from fastapi.responses import JSONResponse
