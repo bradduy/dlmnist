@@ -38,7 +38,7 @@ PyYAML==5.3.1
 requests
 scipy
 seaborn
-sip==4.19.24
+sip
 six==1.15.0
 starlette==0.13.6
 terminaltables==3.1.0
