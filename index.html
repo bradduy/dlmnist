@@ -1,0 +1,22 @@
+<img id="output_image" height=50px width=50px\ />
+<input type="file" accept="image/*" onchange="preview_image(event)" />
+
+<script type="text/javascript">
+
+    function preview_image(event) {
+        var formData = new FormData();
+        var reader = new FileReader();
+        var xhr = new XMLHttpRequest();
+        reader.onload = function () {
+            var output = document.getElementById('output_image');
+
+            output.src = reader.result;
+            formData.append(output.src, output.src);    
+
+            xhr.open("POST", 'https://dlmnist.herokuapp.com/predict');
+            xhr.send(formData)
+        }
+        
+        reader.readAsDataURL(event.target.files[0]);
+    }
+</script>
