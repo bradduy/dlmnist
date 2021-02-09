@@ -19,8 +19,8 @@ kiwisolver==1.2.0
 MarkupSafe==1.1.1
 matplotlib==3.3.2
 mkl-fft
-mkl-random==1.1.1
-mkl-service==2.3.0
+mkl-random
+mkl-service
 mmcv-full==1.1.5
 mmpycocotools==12.0.3
 numpy==1.19.2
